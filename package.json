@@ -1,6 +1,6 @@
 {
   "name": "jsx-semantic",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Semantic HTML components written in JSX for React",
   "author": "spkellydev",
   "license": "MIT",
