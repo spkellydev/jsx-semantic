@@ -38,6 +38,30 @@ export default class App extends Component {
 }
 ```
 
+# Available tags
+```js
+export const Section = Tag('section')
+export const Article = Tag('article')
+export const Button = Tag('button')
+export const Canvas = Tag('canvas')
+export const Header = Tag('header')
+export const Footer = Tag('footer')
+export const Span = Tag('span')
+export const Strong = Tag('strong')
+export const Nav = Tag('nav')
+export const Div = Tag('div')
+export const Em = Tag('em')
+export const Ul = Tag('ul')
+export const Li = Tag('li')
+export const H1 = Tag('h1')
+export const H2 = Tag('h2')
+export const H3 = Tag('h3')
+export const H4 = Tag('h4')
+export const H5 = Tag('h5')
+export const H6 = Tag('h6')
+export const P = Tag('p')
+```
+
 ## License
 
 MIT © [spkellydev](https://github.com/spkellydev)
