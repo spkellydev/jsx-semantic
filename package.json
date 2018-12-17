@@ -1,6 +1,6 @@
 {
   "name": "jsx-semantic",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Semantic HTML components written in JSX for React",
   "author": "spkellydev",
   "license": "MIT",
@@ -19,7 +19,7 @@
     "start": "rollup -c -w",
     "prepare": "npm run build",
     "predeploy": "cd example && npm install && npm run build",
-    "deploy": "gh-pages -d example/build"
+    "deploy": "git push origin master && gh-pages -d example/build && npm publish"
   },
   "peerDependencies": {
     "prop-types": "^15.5.4",
