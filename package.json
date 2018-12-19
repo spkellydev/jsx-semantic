@@ -18,8 +18,8 @@
     "build": "rollup -c",
     "start": "rollup -c -w",
     "prepare": "npm run build",
-    "predeploy": "cd example && npm install && npm run build",
-    "deploy": "git push origin master && gh-pages -d example/build && npm publish"
+    "predeploy": "cd example && npm install && npm run prepare",
+    "deploy": "npm run predeploy && git push origin master && gh-pages -d example/build && npm publish"
   },
   "peerDependencies": {
     "prop-types": "^15.5.4",
