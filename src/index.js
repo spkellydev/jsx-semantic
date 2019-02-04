@@ -1,22 +1,23 @@
 import React from "react";
 import classNames from "classnames";
 
-export const Tag = (tag, defaultProps) => props => {
-  const Tag = tag;
+export const Tag = (tag, defaultProps) =>
+  React.memo(props => {
+    const Tag = tag;
 
-  const { useTagAsClassName, ...attrs } = props;
-  return (
-    <Tag
-      {...attrs}
-      className={classNames(
-        useTagAsClassName === false ? "" : tag,
-        attrs.className
-      )}
-    >
-      {props.children}
-    </Tag>
-  );
-};
+    const { useTagAsClassName, ...attrs } = props;
+    return (
+      <Tag
+        {...attrs}
+        className={classNames(
+          useTagAsClassName === false ? "" : tag,
+          attrs.className
+        )}
+      >
+        {props.children}
+      </Tag>
+    );
+  });
 
 export const Section = Tag("section");
 Section.displayName = "Section";
